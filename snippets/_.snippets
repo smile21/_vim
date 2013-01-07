@@ -1,0 +1,24 @@
+# Global snippets
+
+# (c) holds no legal value ;)
+snippet c)
+	`&enc[:2] == "utf" ? "©" : "(c)"` Copyright `strftime("%Y")` ${1:`g:snips_author`}. All Rights Reserved.${2}
+
+snippet date
+	`strftime("%Y-%m-%d")`
+
+snippet header
+	/* vim: set expandtab tabstop=2 shiftwidth=2 foldmethod=marker: */
+	/*
+	 * (C) 2011-2012 Alibaba Group Holding Limited.
+	 * This program is free software; you can redistribute it and/or
+	 * modify it under the terms of the GNU General Public License
+	 * version 2 as published by the Free Software Foundation.
+	 *
+	 * File   		   : ${1:`expand('%:t')`}
+	 * Author        : xuyi (xuyi.zl@taobao.com)
+	 * Description   : ${2}
+	 *${3: Last Modified : `strftime("%Y-%m-%d")`}
+	 *
+	 */
+
