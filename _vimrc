@@ -4,7 +4,7 @@ set number
 set hls
 color mango
 
-set cursorline
+"set cursorline  "Will make screen redrawing slower.
 
 "Enble filetype blugin
 filetype indent on
