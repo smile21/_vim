@@ -2,6 +2,7 @@ syntax on
 set nocp
 set number
 set hls
+set ttyfast
 color mango
 
 "set cursorline  "Will make screen redrawing slower.
@@ -76,3 +77,7 @@ nmap <F2> :Tab /
 "set cms=/*\ %s*/
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
+
+"for ejs
+au BufNewFile,BufRead *.ejs set filetype=ejs
+
